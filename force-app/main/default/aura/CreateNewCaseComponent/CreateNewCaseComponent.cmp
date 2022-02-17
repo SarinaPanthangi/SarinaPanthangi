@@ -1,0 +1,7 @@
+<aura:component controller="CreateNewCase" implements="force:lightningQuickAction,force:hasRecordId,force:hasSObjectName">
+	  <aura:handler name="init" value="{!this}" action="{!c.onInit}"/>
+    <lightning:workspaceAPI aura:id="workspace"/> 
+    <div class="spinnerCSS slds-is-relative">
+        <lightning:spinner alternativeText="Loading" size="medium" />
+    </div>
+</aura:component>
